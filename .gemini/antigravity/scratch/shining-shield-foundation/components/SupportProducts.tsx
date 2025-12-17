@@ -33,30 +33,16 @@ export default function SupportProducts() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    {products.map((product, index) => (
-                        <div key={index} className="group cursor-pointer">
-                            <div className={`aspect-square w-full rounded-lg ${product.image} mb-4 relative overflow-hidden`}>
-                                <div className="absolute inset-0 flex items-center justify-center text-slate-400">
-                                    <ShoppingBag size={48} className="opacity-20" />
-                                </div>
-                                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300"></div>
-                                <div className="absolute bottom-4 left-0 right-0 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
-                                    <span className="bg-white text-primary px-4 py-2 rounded-full font-bold text-sm shadow-lg">Enquire Now</span>
-                                </div>
-                            </div>
-                            <h4 className="text-lg font-bold text-primary group-hover:text-accent transition-colors">{product.name}</h4>
-                            <p className="text-slate-500 text-sm italic">Contact for availability</p>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="text-center mt-12">
-                    <p className="text-slate-500 mb-4 text-sm">
-                        * All proceeds support our educational activities. Products subject to availability.
+                <div className="max-w-3xl mx-auto bg-slate-50 rounded-2xl p-12 border border-slate-100 text-center shadow-sm">
+                    <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-accent mx-auto mb-6 shadow-sm border border-slate-100">
+                        <ShoppingBag size={32} />
+                    </div>
+                    <h4 className="text-2xl font-bold text-primary mb-4">Official Merchandise Coming Soon</h4>
+                    <p className="text-slate-600 mb-8 leading-relaxed">
+                        We are currently designing a range of official Shining Shield Foundation wear, including T-shirts, caps, and lapel pins. Proceeds will support our educational initiatives.
                     </p>
-                    <Link href="#contact" className="text-primary font-semibold hover:text-accent transition-colors border-b border-primary hover:border-accent pb-0.5">
-                        Contact for Details
+                    <Link href="#contact" className="inline-flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors border-b-2 border-primary hover:border-accent pb-1">
+                        Pre-order or Enquire
                     </Link>
                 </div>
             </div>

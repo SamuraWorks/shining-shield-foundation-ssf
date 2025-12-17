@@ -69,7 +69,9 @@ export default function About() {
                         <div className="absolute inset-0 flex items-center justify-center flex-col text-slate-400">
                             <div className="w-full h-full bg-gradient-to-tr from-primary to-slate-800 opacity-90"></div>
                             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center p-8 border border-white/20 rounded-xl bg-white/5 backdrop-blur-sm">
-                                <Shield size={64} className="text-white mx-auto mb-4 opacity-80" />
+                                <div className="w-24 h-24 mx-auto mb-4 bg-white/10 rounded-full p-2 flex items-center justify-center">
+                                    <img src="/logo.jpg" alt="Logo" className="w-full h-full object-contain" />
+                                </div>
                                 <p className="text-white font-heading font-medium text-xl">Service Above Self</p>
                             </div>
                         </div>

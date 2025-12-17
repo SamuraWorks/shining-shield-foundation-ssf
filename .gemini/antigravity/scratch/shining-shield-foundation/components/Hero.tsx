@@ -5,13 +5,19 @@ import { Reveal } from "./Reveal";
 export default function Hero() {
     return (
         <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-primary">
-            {/* Background decoration */}
-            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10 mix-blend-overlay"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-[#002875] to-[#001f3f] z-0"></div>
+            {/* Real Life Background Image with Overlay */}
+            <div className="absolute inset-0 z-0">
+                <img
+                    src="/gallery/rec-donation/rec-2.jpg"
+                    alt="Shining Shield Foundation Community"
+                    className="w-full h-full object-cover object-center"
+                />
+                {/* Gradient overlay - Brightened */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#001f3f]/80 to-[#0033A0]/60 mix-blend-multiply"></div>
+            </div>
 
-            {/* Abstract Shapes for visual interest without clutter */}
-            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-accent opacity-[0.03] blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-white opacity-[0.05] blur-3xl"></div>
+            {/* Background pattern texture on top of image for polish */}
+            <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10 mix-blend-overlay z-0"></div>
 
             <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
                 <Reveal width="100%">
