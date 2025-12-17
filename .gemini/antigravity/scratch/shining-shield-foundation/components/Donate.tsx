@@ -55,7 +55,7 @@ export default function Donate() {
                                         <div className="flex items-center gap-2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold">
                                             <span>OM</span>
                                         </div>
-                                        <p className="text-slate-400 text-sm">
+                                        <p className="text-white text-base font-bold">
                                             078 921 412
                                         </p>
                                     </div>
