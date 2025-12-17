@@ -51,10 +51,15 @@ export default function Donate() {
                                 <Smartphone className="text-accent mt-1 flex-shrink-0" />
                                 <div>
                                     <h4 className="text-lg font-bold text-white mb-1">Mobile Money Support</h4>
-                                    <p className="text-slate-400 text-sm">
-                                        Orange Money: 078 921 412<br />
-                                        <span className="text-xs italic opacity-70">(Please verify recipient name before sending)</span>
-                                    </p>
+                                    <div className="flex items-center gap-2">
+                                        <div className="flex items-center gap-2 bg-orange-500 text-white px-2 py-1 rounded text-xs font-bold">
+                                            <span>OM</span>
+                                        </div>
+                                        <p className="text-slate-400 text-sm">
+                                            078 921 412
+                                        </p>
+                                    </div>
+                                    <p className="text-xs italic opacity-70 text-slate-400 mt-1">(Please verify recipient name before sending)</p>
                                 </div>
                             </div>
 
@@ -115,8 +120,8 @@ export default function Donate() {
                                             type="button"
                                             onClick={() => handleAmountClick(val)}
                                             className={`px-2 py-2 border rounded-md text-sm font-medium transition-colors ${amount === val && !customAmount
-                                                    ? "border-primary bg-primary/10 text-primary"
-                                                    : "border-slate-300 hover:bg-slate-50 text-slate-700"
+                                                ? "border-primary bg-primary/10 text-primary"
+                                                : "border-slate-300 hover:bg-slate-50 text-slate-700"
                                                 }`}
                                         >
                                             ${val}

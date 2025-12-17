@@ -18,7 +18,8 @@ export default function Founder() {
                             {/* Decorative Elements */}
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/95 via-primary/60 to-transparent p-6 text-white pt-24">
                                 <p className="font-heading font-bold text-xl">Blessing Conteh</p>
-                                <p className="text-sm opacity-90">Founder</p>
+                                <p className="text-sm opacity-90 mb-2">Founder & CEO</p>
+                                <p className="text-xs italic opacity-80 leading-relaxed">"Every child deserves the shield of education to protect their dreams."</p>
                             </div>
                         </div>
                     </div>

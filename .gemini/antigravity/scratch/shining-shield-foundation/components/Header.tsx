@@ -8,11 +8,11 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
-        { name: "About", href: "#about" },
-        { name: "Founder", href: "#founder" },
-        { name: "Activities", href: "#activities" },
-        { name: "Impact", href: "#impact" },
-        { name: "Contact", href: "#contact" },
+        { name: "About", href: "/about" },
+        { name: "Founder", href: "/founder" },
+        { name: "Activities", href: "/activities" },
+        { name: "Impact", href: "/impact" },
+        { name: "Contact", href: "/contact" },
     ];
 
     return (
@@ -60,7 +60,7 @@ export default function Header() {
                             Get Involved
                         </Link>
                         <Link
-                            href="#donate"
+                            href="/donate"
                             className="px-6 py-2.5 bg-accent hover:bg-accent-hover text-white text-sm font-semibold rounded-md shadow-md transition-all transform hover:-translate-y-0.5"
                         >
                             Donate Now
