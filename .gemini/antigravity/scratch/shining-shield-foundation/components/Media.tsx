@@ -16,7 +16,7 @@ export default function Media() {
                             Latest News
                         </h3>
                     </div>
-                    <Link href="#" className="hidden md:flex items-center gap-2 text-primary font-medium hover:text-accent transition-colors">
+                    <Link href="/news" className="hidden md:flex items-center gap-2 text-primary font-medium hover:text-accent transition-colors">
                         View All News <ArrowRight size={18} />
                     </Link>
                 </div>
@@ -48,7 +48,7 @@ export default function Media() {
                 </div>
 
                 <div className="mt-8 text-center md:hidden">
-                    <Link href="#" className="inline-flex items-center gap-2 text-primary font-medium hover:text-accent transition-colors">
+                    <Link href="/news" className="inline-flex items-center gap-2 text-primary font-medium hover:text-accent transition-colors">
                         View All News <ArrowRight size={18} />
                     </Link>
                 </div>

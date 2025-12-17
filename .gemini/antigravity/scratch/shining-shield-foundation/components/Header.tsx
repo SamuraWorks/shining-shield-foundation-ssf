@@ -12,6 +12,7 @@ export default function Header() {
         { name: "Founder", href: "/founder" },
         { name: "Activities", href: "/activities" },
         { name: "Impact", href: "/impact" },
+        { name: "News", href: "/news" },
         { name: "Contact", href: "/contact" },
     ];
 
@@ -54,7 +55,7 @@ export default function Header() {
                     {/* Actions */}
                     <div className="hidden md:flex items-center gap-4">
                         <Link
-                            href="#get-involved"
+                            href="/get-involved"
                             className="text-sm font-semibold text-primary hover:text-primary-light transition-colors"
                         >
                             Get Involved
